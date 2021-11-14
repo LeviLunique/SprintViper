@@ -8,22 +8,78 @@
 
 /* Begin PBXBuildFile section */
 		151962C827406C3B0094B18C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962C727406C3B0094B18C /* AppDelegate.swift */; };
-		151962CA27406C3B0094B18C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962C927406C3B0094B18C /* SceneDelegate.swift */; };
-		151962CC27406C3B0094B18C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962CB27406C3B0094B18C /* ViewController.swift */; };
-		151962CF27406C3B0094B18C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151962CD27406C3B0094B18C /* Main.storyboard */; };
 		151962D127406C3C0094B18C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151962D027406C3C0094B18C /* Assets.xcassets */; };
 		151962D427406C3C0094B18C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151962D227406C3C0094B18C /* LaunchScreen.storyboard */; };
+		151962E1274073F40094B18C /* Sprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962E0274073F40094B18C /* Sprint.swift */; };
+		151962E72740840E0094B18C /* SprintListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962E62740840E0094B18C /* SprintListPresenter.swift */; };
+		151962E9274086F80094B18C /* SprintListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962E8274086F80094B18C /* SprintListItemViewModel.swift */; };
+		151962EB274088F40094B18C /* SprintListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962EA274088F40094B18C /* SprintListInteractor.swift */; };
+		151962F527408F770094B18C /* SprintListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962F427408F770094B18C /* SprintListManager.swift */; };
+		151962F7274090E20094B18C /* SprintAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962F6274090E20094B18C /* SprintAPIModel.swift */; };
+		151962FB2740931D0094B18C /* SprintAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962FA2740931D0094B18C /* SprintAPI.swift */; };
+		151962FD27409DA40094B18C /* SprintMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151962FC27409DA40094B18C /* SprintMapper.swift */; };
+		15D665B3274132630078A911 /* SprintListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665B1274132630078A911 /* SprintListViewController.swift */; };
+		15D665B4274132630078A911 /* SprintListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D665B2274132630078A911 /* SprintListViewController.xib */; };
+		15D665B6274132A80078A911 /* SprintListViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665B5274132A80078A911 /* SprintListViewBuilder.swift */; };
+		15D665B9274132E10078A911 /* SprintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665B7274132E10078A911 /* SprintTableViewCell.swift */; };
+		15D665BA274132E10078A911 /* SprintTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D665B8274132E10078A911 /* SprintTableViewCell.xib */; };
+		15D665BC274143520078A911 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665BB274143520078A911 /* UITableView+Extension.swift */; };
+		15D665BE274144B10078A911 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665BD274144B10078A911 /* UITableViewCell+Extension.swift */; };
+		15D665C02741461C0078A911 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665BF2741461C0078A911 /* UIColor+Extension.swift */; };
+		15D665C22741474D0078A911 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665C12741474D0078A911 /* UIView+Extension.swift */; };
+		15D665C4274153B30078A911 /* SprintListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665C3274153B30078A911 /* SprintListRouter.swift */; };
+		15D665C6274156000078A911 /* SprintListInteractorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665C5274156000078A911 /* SprintListInteractorBuilder.swift */; };
+		15D665D027415F910078A911 /* SprintDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665CF27415F910078A911 /* SprintDetailsInteractor.swift */; };
+		15D665D22741636C0078A911 /* SprintDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665D12741636C0078A911 /* SprintDetailsManager.swift */; };
+		15D665D42741751A0078A911 /* SprintDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665D32741751A0078A911 /* SprintDetailsPresenter.swift */; };
+		15D665D6274176C70078A911 /* SprintDetailsrouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665D5274176C70078A911 /* SprintDetailsrouter.swift */; };
+		15D665D9274177A60078A911 /* SprintDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665D7274177A60078A911 /* SprintDetailsViewController.swift */; };
+		15D665DA274177A60078A911 /* SprintDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D665D8274177A60078A911 /* SprintDetailsViewController.xib */; };
+		15D665DC274177E00078A911 /* SprintDetailsViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665DB274177E00078A911 /* SprintDetailsViewControllerBuilder.swift */; };
+		15D665DE274194A40078A911 /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665DD274194A40078A911 /* NavigationViewModel.swift */; };
+		15D665E0274198460078A911 /* SprintListPresenterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665DF274198460078A911 /* SprintListPresenterBuilder.swift */; };
+		15D665E22741A0490078A911 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D665E12741A0490078A911 /* SceneDelegate.swift */; };
+		41FDAB55F024A3F953150DEF /* Pods_SprintViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477BA0C9F7EC4DB1A9205032 /* Pods_SprintViper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		151962C427406C3B0094B18C /* SprintViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SprintViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151962C727406C3B0094B18C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		151962C927406C3B0094B18C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		151962CB27406C3B0094B18C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		151962CE27406C3B0094B18C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		151962D027406C3C0094B18C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		151962D327406C3C0094B18C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151962D527406C3C0094B18C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151962E0274073F40094B18C /* Sprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprint.swift; sourceTree = "<group>"; };
+		151962E62740840E0094B18C /* SprintListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintListPresenter.swift; sourceTree = "<group>"; };
+		151962E8274086F80094B18C /* SprintListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintListItemViewModel.swift; sourceTree = "<group>"; };
+		151962EA274088F40094B18C /* SprintListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintListInteractor.swift; sourceTree = "<group>"; };
+		151962F427408F770094B18C /* SprintListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintListManager.swift; sourceTree = "<group>"; };
+		151962F6274090E20094B18C /* SprintAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintAPIModel.swift; sourceTree = "<group>"; };
+		151962FA2740931D0094B18C /* SprintAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintAPI.swift; sourceTree = "<group>"; };
+		151962FC27409DA40094B18C /* SprintMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintMapper.swift; sourceTree = "<group>"; };
+		15D665B1274132630078A911 /* SprintListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintListViewController.swift; sourceTree = "<group>"; };
+		15D665B2274132630078A911 /* SprintListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SprintListViewController.xib; sourceTree = "<group>"; };
+		15D665B5274132A80078A911 /* SprintListViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintListViewBuilder.swift; sourceTree = "<group>"; };
+		15D665B7274132E10078A911 /* SprintTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintTableViewCell.swift; sourceTree = "<group>"; };
+		15D665B8274132E10078A911 /* SprintTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SprintTableViewCell.xib; sourceTree = "<group>"; };
+		15D665BB274143520078A911 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		15D665BD274144B10078A911 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		15D665BF2741461C0078A911 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		15D665C12741474D0078A911 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		15D665C3274153B30078A911 /* SprintListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintListRouter.swift; sourceTree = "<group>"; };
+		15D665C5274156000078A911 /* SprintListInteractorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintListInteractorBuilder.swift; sourceTree = "<group>"; };
+		15D665CF27415F910078A911 /* SprintDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintDetailsInteractor.swift; sourceTree = "<group>"; };
+		15D665D12741636C0078A911 /* SprintDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintDetailsManager.swift; sourceTree = "<group>"; };
+		15D665D32741751A0078A911 /* SprintDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintDetailsPresenter.swift; sourceTree = "<group>"; };
+		15D665D5274176C70078A911 /* SprintDetailsrouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintDetailsrouter.swift; sourceTree = "<group>"; };
+		15D665D7274177A60078A911 /* SprintDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintDetailsViewController.swift; sourceTree = "<group>"; };
+		15D665D8274177A60078A911 /* SprintDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SprintDetailsViewController.xib; sourceTree = "<group>"; };
+		15D665DB274177E00078A911 /* SprintDetailsViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintDetailsViewControllerBuilder.swift; sourceTree = "<group>"; };
+		15D665DD274194A40078A911 /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
+		15D665DF274198460078A911 /* SprintListPresenterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintListPresenterBuilder.swift; sourceTree = "<group>"; };
+		15D665E12741A0490078A911 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		477BA0C9F7EC4DB1A9205032 /* Pods_SprintViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SprintViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AF604A0A5023464BC81FC7 /* Pods-SprintViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SprintViper.release.xcconfig"; path = "Target Support Files/Pods-SprintViper/Pods-SprintViper.release.xcconfig"; sourceTree = "<group>"; };
+		9452F58E84A86B6EFDB08135 /* Pods-SprintViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SprintViper.debug.xcconfig"; path = "Target Support Files/Pods-SprintViper/Pods-SprintViper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FDAB55F024A3F953150DEF /* Pods_SprintViper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +99,8 @@
 			children = (
 				151962C627406C3B0094B18C /* SprintViper */,
 				151962C527406C3B0094B18C /* Products */,
+				975391CD2CFF02F9089EED2F /* Pods */,
+				5FA841C1BADBFB877B997587 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +115,234 @@
 		151962C627406C3B0094B18C /* SprintViper */ = {
 			isa = PBXGroup;
 			children = (
-				151962C727406C3B0094B18C /* AppDelegate.swift */,
-				151962C927406C3B0094B18C /* SceneDelegate.swift */,
-				151962CB27406C3B0094B18C /* ViewController.swift */,
-				151962CD27406C3B0094B18C /* Main.storyboard */,
+				151962EE27408DE10094B18C /* Application */,
+				151962EC27408DC10094B18C /* Common */,
+				151962ED27408DCB0094B18C /* Modules */,
 				151962D027406C3C0094B18C /* Assets.xcassets */,
 				151962D227406C3C0094B18C /* LaunchScreen.storyboard */,
 				151962D527406C3C0094B18C /* Info.plist */,
 			);
 			path = SprintViper;
+			sourceTree = "<group>";
+		};
+		151962DB274070260094B18C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15D665B1274132630078A911 /* SprintListViewController.swift */,
+				15D665B2274132630078A911 /* SprintListViewController.xib */,
+				15D665B7274132E10078A911 /* SprintTableViewCell.swift */,
+				15D665B8274132E10078A911 /* SprintTableViewCell.xib */,
+				15D665B5274132A80078A911 /* SprintListViewBuilder.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		151962DC274070320094B18C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				151962EA274088F40094B18C /* SprintListInteractor.swift */,
+				15D665C5274156000078A911 /* SprintListInteractorBuilder.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		151962DD274070480094B18C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				15D665DD274194A40078A911 /* NavigationViewModel.swift */,
+				151962E8274086F80094B18C /* SprintListItemViewModel.swift */,
+				151962E62740840E0094B18C /* SprintListPresenter.swift */,
+				15D665DF274198460078A911 /* SprintListPresenterBuilder.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		151962DE2740705B0094B18C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				151962E0274073F40094B18C /* Sprint.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		151962DF274070700094B18C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				15D665C3274153B30078A911 /* SprintListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		151962EC27408DC10094B18C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				151962DE2740705B0094B18C /* Entity */,
+				151962F8274092C40094B18C /* Extensions */,
+				151962F9274092D60094B18C /* Mapper */,
+				151962FA2740931D0094B18C /* SprintAPI.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		151962ED27408DCB0094B18C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				15D665C727415EB50078A911 /* Details */,
+				151962EF27408E230094B18C /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		151962EE27408DE10094B18C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				151962C727406C3B0094B18C /* AppDelegate.swift */,
+				15D665E12741A0490078A911 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		151962EF27408E230094B18C /* List */ = {
+			isa = PBXGroup;
+			children = (
+				151962F027408E2F0094B18C /* Application Logic */,
+				151962F127408E420094B18C /* User Interface */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		151962F027408E2F0094B18C /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				151962DC274070320094B18C /* Interactor */,
+				151962F327408E800094B18C /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		151962F127408E420094B18C /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				151962DD274070480094B18C /* Presenter */,
+				151962DF274070700094B18C /* Router */,
+				151962DB274070260094B18C /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		151962F327408E800094B18C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				151962F427408F770094B18C /* SprintListManager.swift */,
+				151962F6274090E20094B18C /* SprintAPIModel.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		151962F8274092C40094B18C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15D665BF2741461C0078A911 /* UIColor+Extension.swift */,
+				15D665BB274143520078A911 /* UITableView+Extension.swift */,
+				15D665BD274144B10078A911 /* UITableViewCell+Extension.swift */,
+				15D665C12741474D0078A911 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		151962F9274092D60094B18C /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				151962FC27409DA40094B18C /* SprintMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		15D665C727415EB50078A911 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				15D665C827415EDA0078A911 /* Application Logic */,
+				15D665C927415EFB0078A911 /* User Interface */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		15D665C827415EDA0078A911 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				15D665CB27415F2B0078A911 /* Interactor */,
+				15D665CA27415F210078A911 /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		15D665C927415EFB0078A911 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				15D665CE27415F5D0078A911 /* Presenter */,
+				15D665CD27415F4C0078A911 /* Router */,
+				15D665CC27415F410078A911 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		15D665CA27415F210078A911 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				15D665D12741636C0078A911 /* SprintDetailsManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		15D665CB27415F2B0078A911 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				15D665CF27415F910078A911 /* SprintDetailsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		15D665CC27415F410078A911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15D665D7274177A60078A911 /* SprintDetailsViewController.swift */,
+				15D665D8274177A60078A911 /* SprintDetailsViewController.xib */,
+				15D665DB274177E00078A911 /* SprintDetailsViewControllerBuilder.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15D665CD27415F4C0078A911 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				15D665D5274176C70078A911 /* SprintDetailsrouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		15D665CE27415F5D0078A911 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				15D665D32741751A0078A911 /* SprintDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5FA841C1BADBFB877B997587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				477BA0C9F7EC4DB1A9205032 /* Pods_SprintViper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		975391CD2CFF02F9089EED2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9452F58E84A86B6EFDB08135 /* Pods-SprintViper.debug.xcconfig */,
+				75AF604A0A5023464BC81FC7 /* Pods-SprintViper.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +352,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 151962D827406C3C0094B18C /* Build configuration list for PBXNativeTarget "SprintViper" */;
 			buildPhases = (
+				A34D2514EB1A32FB29242661 /* [CP] Check Pods Manifest.lock */,
 				151962C027406C3B0094B18C /* Sources */,
 				151962C127406C3B0094B18C /* Frameworks */,
 				151962C227406C3B0094B18C /* Resources */,
+				9289501BB0D9CA76CBBB4997 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,35 +406,95 @@
 			buildActionMask = 2147483647;
 			files = (
 				151962D427406C3C0094B18C /* LaunchScreen.storyboard in Resources */,
+				15D665DA274177A60078A911 /* SprintDetailsViewController.xib in Resources */,
 				151962D127406C3C0094B18C /* Assets.xcassets in Resources */,
-				151962CF27406C3B0094B18C /* Main.storyboard in Resources */,
+				15D665B4274132630078A911 /* SprintListViewController.xib in Resources */,
+				15D665BA274132E10078A911 /* SprintTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9289501BB0D9CA76CBBB4997 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SprintViper/Pods-SprintViper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SprintViper/Pods-SprintViper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SprintViper/Pods-SprintViper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A34D2514EB1A32FB29242661 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SprintViper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		151962C027406C3B0094B18C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				151962CC27406C3B0094B18C /* ViewController.swift in Sources */,
+				151962E72740840E0094B18C /* SprintListPresenter.swift in Sources */,
+				151962E9274086F80094B18C /* SprintListItemViewModel.swift in Sources */,
+				15D665C4274153B30078A911 /* SprintListRouter.swift in Sources */,
+				15D665C22741474D0078A911 /* UIView+Extension.swift in Sources */,
+				151962FB2740931D0094B18C /* SprintAPI.swift in Sources */,
+				15D665D9274177A60078A911 /* SprintDetailsViewController.swift in Sources */,
+				15D665B9274132E10078A911 /* SprintTableViewCell.swift in Sources */,
+				15D665DC274177E00078A911 /* SprintDetailsViewControllerBuilder.swift in Sources */,
+				15D665E0274198460078A911 /* SprintListPresenterBuilder.swift in Sources */,
+				15D665D42741751A0078A911 /* SprintDetailsPresenter.swift in Sources */,
+				151962F7274090E20094B18C /* SprintAPIModel.swift in Sources */,
+				15D665E22741A0490078A911 /* SceneDelegate.swift in Sources */,
+				15D665B3274132630078A911 /* SprintListViewController.swift in Sources */,
+				15D665D6274176C70078A911 /* SprintDetailsrouter.swift in Sources */,
+				15D665C6274156000078A911 /* SprintListInteractorBuilder.swift in Sources */,
+				151962F527408F770094B18C /* SprintListManager.swift in Sources */,
+				15D665D027415F910078A911 /* SprintDetailsInteractor.swift in Sources */,
+				15D665BE274144B10078A911 /* UITableViewCell+Extension.swift in Sources */,
 				151962C827406C3B0094B18C /* AppDelegate.swift in Sources */,
-				151962CA27406C3B0094B18C /* SceneDelegate.swift in Sources */,
+				15D665C02741461C0078A911 /* UIColor+Extension.swift in Sources */,
+				15D665D22741636C0078A911 /* SprintDetailsManager.swift in Sources */,
+				15D665BC274143520078A911 /* UITableView+Extension.swift in Sources */,
+				151962EB274088F40094B18C /* SprintListInteractor.swift in Sources */,
+				15D665DE274194A40078A911 /* NavigationViewModel.swift in Sources */,
+				151962FD27409DA40094B18C /* SprintMapper.swift in Sources */,
+				15D665B6274132A80078A911 /* SprintListViewBuilder.swift in Sources */,
+				151962E1274073F40094B18C /* Sprint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		151962CD27406C3B0094B18C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				151962CE27406C3B0094B18C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		151962D227406C3C0094B18C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +624,7 @@
 		};
 		151962D927406C3C0094B18C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9452F58E84A86B6EFDB08135 /* Pods-SprintViper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +634,7 @@
 				INFOPLIST_FILE = SprintViper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +652,7 @@
 		};
 		151962DA27406C3C0094B18C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75AF604A0A5023464BC81FC7 /* Pods-SprintViper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +662,7 @@
 				INFOPLIST_FILE = SprintViper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

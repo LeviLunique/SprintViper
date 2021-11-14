@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SprintDetailsViewController" customModule="SprintViper" customModuleProvider="target">
+            <connections>
+                <outlet property="linkSprint" destination="VXb-fP-dgN" id="BWx-IJ-xFS"/>
+                <outlet property="nextButton" destination="D1a-PQ-5DH" id="D6j-a6-zHo"/>
+                <outlet property="nomeSprint" destination="Ov7-QK-1bk" id="C2y-FY-AL3"/>
+                <outlet property="previousButton" destination="DkM-jw-qTI" id="EFy-Nh-STa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov7-QK-1bk">
+                    <rect key="frame" x="20" y="97" width="374" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXb-fP-dgN">
+                    <rect key="frame" x="35" y="151" width="36" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkM-jw-qTI">
+                    <rect key="frame" x="16" y="831" width="76" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Anterior"/>
+                    <connections>
+                        <action selector="previousButtonPressed:" destination="-1" eventType="touchUpInside" id="dqI-t7-GkG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1a-PQ-5DH">
+                    <rect key="frame" x="323" y="831" width="76" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Próxima"/>
+                    <connections>
+                        <action selector="nextButtonPressed:" destination="-1" eventType="touchUpInside" id="Cgh-jx-Qpm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="DkM-jw-qTI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="87W-LB-dTv"/>
+                <constraint firstItem="VXb-fP-dgN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="Fsq-ec-9Qw"/>
+                <constraint firstItem="D1a-PQ-5DH" firstAttribute="centerY" secondItem="DkM-jw-qTI" secondAttribute="centerY" id="Ihz-DY-wwa"/>
+                <constraint firstItem="D1a-PQ-5DH" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Rw8-vw-xjl"/>
+                <constraint firstItem="D1a-PQ-5DH" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Sgz-Ra-Lq0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ov7-QK-1bk" secondAttribute="bottom" constant="741" id="T4L-6I-Ltx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VXb-fP-dgN" secondAttribute="bottom" constant="690" id="UdD-6t-QOM"/>
+                <constraint firstItem="Ov7-QK-1bk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Unh-Ni-t3D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D1a-PQ-5DH" secondAttribute="trailing" constant="15" id="WqH-ml-ydF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D1a-PQ-5DH" secondAttribute="trailing" constant="15" id="aAJ-rE-zWg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ov7-QK-1bk" secondAttribute="trailing" constant="20" id="cKN-Lq-dQr"/>
+                <constraint firstItem="Ov7-QK-1bk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="53" id="cTf-WM-6MD"/>
+                <constraint firstItem="DkM-jw-qTI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ie2-wc-SFl"/>
+                <constraint firstItem="VXb-fP-dgN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="107" id="jnR-dj-Qph"/>
+                <constraint firstItem="DkM-jw-qTI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="qQ4-xf-6UI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VXb-fP-dgN" secondAttribute="trailing" constant="343" id="ulj-Se-X2m"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
